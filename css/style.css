@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+body {
+		font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 64px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #004974;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul li {
+	display: block;
+	border-left: 3px solid #004974;
+}
+
+.sidebar ul li:hover {
+	background: #005C83;
+	border-left: 3px solid #F66B32;
+}
+
+.sidebar ul li.selected {
+	background: #005C83;
+	border-left: 3px solid #F66B32;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+	text-align: center;
+	margin-left: -8px;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.main {
+    margin-left: 64px;
+    padding: 0px 10px;
+}
+
+.container-status {
+	display: flex
+}
+
+.container-status-item {
+	flex: 1;
+	background-color: #004974;
+	text-align: right;
+	color: #fff;
+	margin: 4px 2px;
+	border-radius: 3px;
+	padding: 4px;
+}
+
+.container-status-item:first-child {
+	margin-left: 0;
+}
+
+.container-status-item:last-child {
+	margin-right: 0;
+}
+
+.large {
+	font-size: 48px;
+	margin: 0 10px;
+}
+
+.status-text {
+	margin: 0 10px 10px 0;
+}
+
+.container-notification-information {
+	background-color: #2196f3;
+	margin: 4px 0;
+	padding: 5px 20px;
+	border: rgba(0,0,0,.12);
+	border-radius: 0;
+	border-width: 0 0 0 6px;
+	border-style: solid;
+	color: #fff;
+	font-weight: bold;
+}
+.container-notification-warning {
+	background-color: #ffc107;
+	margin: 4px 0;
+	padding: 5px 20px;
+	border: rgba(0,0,0,.12);
+	border-radius: 0;
+	border-width: 0 0 0 6px;
+	border-style: solid;
+	color: #fff;
+	font-weight: bold;
+}
+
+.container-notification-success {
+	background-color: #4caf50;
+	margin: 4px 0;
+	padding: 5px 20px;
+	border: rgba(0,0,0,.12);
+	border-radius: 0;
+	border-width: 0 0 0 6px;
+	border-style: solid;
+	color: #fff;
+	font-weight: bold;
+}
+
+.container-notification-alert {
+	background-color: #ff5252;
+	margin: 4px 0;
+	padding: 5px 20px;
+	border: rgba(0,0,0,.12);
+	border-radius: 0;
+	border-width: 0 0 0 6px;
+	border-style: solid;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+
+
+/* Table myTickets */
+.mytickets {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mytickets td, .mytickets th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.mytickets tr:nth-child(even) {
+	background-color: #f7f7f7;
+}
+
+.mytickets tr:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
+
+.mytickets th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #004974;
+  color: white;
+}
+
+.light-level-1 {
+	background-color: rgba(0,0,0,.12);
+}
+
+.light-level-2 {
+	background-color: rgba(0,0,0,.24);
+}
+
+.light-level-3 {
+	background-color: rgba(0,0,0,.36);
+}
+
+.light-level-4 {
+	background-color: rgba(0,0,0,.48);
+}
+
+.light-level-5 {
+	background-color: rgba(0,0,0,.60);
+}
+
+.light-level-6 {
+	background-color: rgba(0,0,0,.72);
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
