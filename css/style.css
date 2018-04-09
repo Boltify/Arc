@@ -29,12 +29,12 @@ body {
 
 .sidebar ul li:hover {
 	background: #005C83;
-	border-left: 3px solid #F66B32;
+	border-left: 3px solid #f66B32;
 }
 
 .sidebar ul li.selected {
 	background: #005C83;
-	border-left: 3px solid #F66B32;
+	border-left: 3px solid #f66B32;
 }
 
 .sidebar a {
